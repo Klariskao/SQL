@@ -1,0 +1,9 @@
+-- Solution of SQL challenge on HackerRank
+-- Revising the Select Query II
+-- Found at https://www.hackerrank.com/challenges/revising-the-select-query-2/problem?isFullScreen=true
+-- --------------------------------------------------------------
+
+select name
+from city
+where countrycode = 'USA'
+and population > 120000

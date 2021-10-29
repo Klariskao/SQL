@@ -1,0 +1,8 @@
+-- Solution of SQL challenge on HackerRank
+-- African Cities
+-- Found at https://www.hackerrank.com/challenges/african-cities/problem?isFullScreen=true
+-- --------------------------------------------------------------
+
+select CITY.name
+from CITY, COUNTRY
+where CITY.CountryCode = COUNTRY.Code and CONTINENT = 'Africa'

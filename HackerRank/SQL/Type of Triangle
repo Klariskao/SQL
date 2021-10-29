@@ -1,0 +1,13 @@
+-- Solution of SQL challenge on HackerRank
+-- Type of Triangle
+-- Found at https://www.hackerrank.com/challenges/what-type-of-triangle/problem?isFullScreen=true
+-- --------------------------------------------------------------
+
+select 
+(CASE
+    WHEN ((a + b <= c) or (a + c <= b) or (b + c <= a)) THEN 'Not A Triangle'
+    WHEN ((a = b) and (b = c)) THEN 'Equilateral'
+    WHEN ((a = b) or (a = c) or (b = c)) THEN 'Isosceles'
+    ELSE 'Scalene'
+END)
+from TRIANGLES

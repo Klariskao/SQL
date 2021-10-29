@@ -1,0 +1,9 @@
+-- Solution of SQL challenge on HackerRank
+-- Average Population of Each Continent
+-- Found at https://www.hackerrank.com/challenges/average-population-of-each-continent/problem?isFullScreen=true
+-- --------------------------------------------------------------
+
+select COUNTRY.Continent, floor(avg(CITY.Population))
+from CITY, COUNTRY
+where CITY.CountryCode = COUNTRY.Code
+group by COUNTRY.Continent

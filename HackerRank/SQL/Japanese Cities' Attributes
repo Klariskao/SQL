@@ -1,0 +1,8 @@
+-- Solution of SQL challenge on HackerRank
+-- Japanese Cities' Attributes
+-- Found at https://www.hackerrank.com/challenges/japanese-cities-attributes/problem?isFullScreen=true
+-- --------------------------------------------------------------
+
+select *
+from CITY 
+where COUNTRYCODE = 'JPN'

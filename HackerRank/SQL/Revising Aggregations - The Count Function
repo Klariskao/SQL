@@ -1,0 +1,8 @@
+-- Solution of SQL challenge on HackerRank
+-- Revising Aggregations - The Count Function
+-- Found at https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem?isFullScreen=true
+-- --------------------------------------------------------------
+
+select count(name)
+from city
+where population > 100000

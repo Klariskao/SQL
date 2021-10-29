@@ -1,0 +1,8 @@
+-- Solution of SQL challenge on HackerRank
+-- Population Census
+-- Found at https://www.hackerrank.com/challenges/asian-population/problem?isFullScreen=true
+-- --------------------------------------------------------------
+
+select sum(CITY.population)
+from CITY, COUNTRY
+where COUNTRY.CONTINENT = 'Asia' and CITY.CountryCode = COUNTRY.Code

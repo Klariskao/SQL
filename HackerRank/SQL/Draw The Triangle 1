@@ -1,0 +1,24 @@
+-- Solution of SQL challenge on HackerRank
+-- Draw The Triangle 1
+-- Found at https://www.hackerrank.com/challenges/draw-the-triangle-1/problem?isFullScreen=true
+-- --------------------------------------------------------------
+
+delimiter //
+
+CREATE procedure TriangleLoop()
+BEGIN
+  DECLARE x INT;
+  DECLARE str VARCHAR(5000);
+  SET x = 20;
+  SET str = '';
+
+  REPEAT
+    SET str = REPEAT(CONCAT('*', ' '), x);
+    SET x = x - 1;
+    SELECT str;
+    UNTIL x = 0
+    
+  END REPEAT;
+END//
+
+call TriangleLoop()

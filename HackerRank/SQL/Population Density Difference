@@ -1,0 +1,7 @@
+-- Solution of SQL challenge on HackerRank
+-- Population Density Difference
+-- Found at https://www.hackerrank.com/challenges/population-density-difference/problem?isFullScreen=true
+-- --------------------------------------------------------------
+
+select max(population) - min(population)
+from city

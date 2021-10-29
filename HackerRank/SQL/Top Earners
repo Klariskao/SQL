@@ -1,0 +1,8 @@
+-- Solution of SQL challenge on HackerRank
+-- Top Earners
+-- Found at https://www.hackerrank.com/challenges/earnings-of-employees/problem?isFullScreen=true
+-- --------------------------------------------------------------
+
+select max(months * salary), count(employee_id)
+from employee
+where months * salary = (select max(months * salary) from employee)

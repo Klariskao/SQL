@@ -1,0 +1,7 @@
+-- Solution of SQL challenge on HackerRank
+-- Average Population
+-- Found at https://www.hackerrank.com/challenges/average-population/problem?isFullScreen=true
+-- --------------------------------------------------------------
+
+select round(avg(population), 0)
+from city
